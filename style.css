@@ -1,0 +1,325 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+body {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 2fr 2fr 2fr 0.2fr;
+    grid-template-rows: 76px 45vh 240px 240px;
+    background-color: white;
+    gap: 20px;
+}
+
+#nav {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+
+    background-color: white;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 2fr 2fr 2fr 0.2fr;
+    gap: 20px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.nav-content {
+    grid-column: 2 / 6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 0;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: light;
+
+    white-space: nowrap;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    white-space: nowrap;
+}
+
+.nos-logo {
+    width: 45px;
+    height: auto;
+}
+
+.npo-logo {
+    width: 28px;
+    height: auto;
+}
+
+.nav-icon {
+    object-fit: contain;
+}
+
+.weer {
+    width: 28px;
+}
+
+.search {
+    width: 25px;
+}
+
+.dots {
+    width: 10px;
+}
+
+.active {
+    color: #e61f15
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    background-color: #ddd;
+}
+
+#storyleft {
+    background-color: blueviolet;
+    background-image: url("images/nos1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 15px;
+
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#storyright {
+    background-color: crimson;
+    background-image: url("images/nos2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    padding: 15px;
+
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#article1 {
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#article1 img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+#article2 {
+    background-color: white;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#article2 img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+#article3 {
+    background-color: white;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+#article3 img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+#latest {
+    background-color: white;
+    grid-column: 5 / 6;
+    grid-row: 3 / 6;
+
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+#latest h2 {
+    color: #e61f15;
+    margin-top: 0;
+}
+
+.newsitem {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.time {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    font-weight: light;
+}
+
+.newsitem p {
+    color: black;
+    margin: 5px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    font-weight: light;
+}
+
+#article4 {
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+#article4 img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+#article5 {
+    background-color: white;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+#article5 img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+#article6 {
+    background-color: white;
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+
+#article6 img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+#article1 img,
+#article2 img,
+#article3 img,
+#article4 img,
+#article5 img,
+#article6 img {
+    border-radius: 3px;
+}
+
+#storyleft,
+#storyright {
+    border-radius: 3px;
+}
+
+#latest {
+    border-radius: 3px;
+}
+
+h1 {
+    color: white;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: black;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: grey;
+    font-size: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+
+.liveblog {
+    background-color: #e61f15;
+    color: white;
+    border-radius: 50px;
+    padding: 3px 13px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.pin-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.pin::after {
+    content: "";
+    position: absolute;
+
+    width: 2px;
+    height: 8px;
+
+    background-color: white;
+
+    left: 50%;
+    top: 11px;
+
+    transform: translateX(-50%);
+}
